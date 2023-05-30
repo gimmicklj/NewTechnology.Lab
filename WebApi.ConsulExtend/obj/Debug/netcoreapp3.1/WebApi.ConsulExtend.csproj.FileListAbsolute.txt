@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\bin\Debug\netcoreapp3.1\WebApi.ConsulExtend.deps.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\bin\Debug\netcoreapp3.1\WebApi.ConsulExtend.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\bin\Debug\netcoreapp3.1\WebApi.ConsulExtend.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\obj\Debug\netcoreapp3.1\WebApi.ConsulExtend.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\obj\Debug\netcoreapp3.1\WebApi.ConsulExtend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\obj\Debug\netcoreapp3.1\WebApi.ConsulExtend.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\obj\Debug\netcoreapp3.1\WebApi.ConsulExtend.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\obj\Debug\netcoreapp3.1\WebApi.ConsulExtend.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\obj\Debug\netcoreapp3.1\WebApi.ConsulExtend.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.ConsulExtend\obj\Debug\netcoreapp3.1\WebApi.ConsulExtend.pdb

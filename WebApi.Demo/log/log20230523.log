@@ -1,0 +1,847 @@
+2023-05-23 14:24:26.327 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 14:24:26.418 +08:00 [INF] Now listening on: http://localhost:5000
+2023-05-23 14:24:26.420 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 14:24:26.421 +08:00 [INF] Hosting environment: Development
+2023-05-23 14:24:26.423 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 14:24:29.169 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 14:24:30.175 +08:00 [INF] HTTP GET /index.html responded 200 in 778.7053 ms
+2023-05-23 14:24:30.514 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 14:24:30.515 +08:00 [INF] Request finished in 1351.2737ms 200 text/html;charset=utf-8
+2023-05-23 14:24:30.518 +08:00 [INF] Request finished in 4.9581ms 200 application/javascript; charset=utf-8
+2023-05-23 14:24:30.532 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink  
+2023-05-23 14:24:31.530 +08:00 [INF] Request finished in 996.9706ms 200 text/javascript; charset=UTF-8
+2023-05-23 14:24:31.776 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 14:24:32.370 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 591.1412 ms
+2023-05-23 14:24:32.374 +08:00 [INF] Request finished in 599.0176ms 200 application/json;charset=utf-8
+2023-05-23 14:25:05.273 +08:00 [INF] Application is shutting down...
+2023-05-23 14:27:07.325 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 14:27:07.399 +08:00 [INF] Now listening on: http://localhost:5000
+2023-05-23 14:27:07.402 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 14:27:07.403 +08:00 [INF] Hosting environment: Development
+2023-05-23 14:27:07.406 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 14:27:09.536 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 14:27:09.768 +08:00 [INF] HTTP GET /index.html responded 200 in 144.1614 ms
+2023-05-23 14:27:09.777 +08:00 [INF] Request finished in 247.5668ms 200 text/html;charset=utf-8
+2023-05-23 14:27:09.829 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 14:27:09.839 +08:00 [INF] Request finished in 9.6829ms 200 application/javascript; charset=utf-8
+2023-05-23 14:27:10.453 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 14:27:10.598 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 142.0501 ms
+2023-05-23 14:27:10.605 +08:00 [INF] Request finished in 152.368ms 200 application/json;charset=utf-8
+2023-05-23 14:27:21.390 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Books  
+2023-05-23 14:27:21.399 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 14:27:21.424 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 14:27:22.250 +08:00 [INF] Entity Framework Core 3.1.0 initialized 'BMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-05-23 14:27:22.732 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[Author], [t].[ISBN], [t].[Publisher], [t0].[Id], [t0].[Amount], [t0].[Bookid]
+FROM [TB_Book] AS [t]
+LEFT JOIN [TB_Inventory] AS [t0] ON [t].[Id] = [t0].[Bookid]
+2023-05-23 14:27:22.836 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 14:27:22.848 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 1416.8829ms
+2023-05-23 14:27:22.850 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 14:27:22.852 +08:00 [INF] HTTP GET /api/Books responded 200 in 1458.8736 ms
+2023-05-23 14:27:22.857 +08:00 [INF] Request finished in 1470.2433ms 200 application/json; charset=utf-8
+2023-05-23 14:36:50.784 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 14:36:50.854 +08:00 [INF] Now listening on: http://localhost:5000
+2023-05-23 14:36:50.857 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 14:36:50.859 +08:00 [INF] Hosting environment: Development
+2023-05-23 14:36:50.861 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 14:36:52.106 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 14:36:52.378 +08:00 [INF] HTTP GET /index.html responded 200 in 157.1211 ms
+2023-05-23 14:36:52.394 +08:00 [INF] Request finished in 300.0269ms 200 text/html;charset=utf-8
+2023-05-23 14:36:52.483 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 14:36:52.496 +08:00 [INF] Request finished in 12.7766ms 200 application/javascript; charset=utf-8
+2023-05-23 14:36:53.116 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 14:36:53.227 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 106.1633 ms
+2023-05-23 14:36:53.231 +08:00 [INF] Request finished in 115.8297ms 200 application/json;charset=utf-8
+2023-05-23 14:36:56.495 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Healthcheck  
+2023-05-23 14:36:56.503 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 14:36:56.524 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 14:36:56.531 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 14:36:56.549 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 18.878ms
+2023-05-23 14:36:56.554 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 14:36:56.556 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 57.1376 ms
+2023-05-23 14:36:56.559 +08:00 [INF] Request finished in 63.7929ms 200 text/plain; charset=utf-8
+2023-05-23 14:37:06.578 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Healthcheck  
+2023-05-23 14:37:06.632 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 14:37:06.635 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 14:37:06.639 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 14:37:06.640 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.1578ms
+2023-05-23 14:37:06.643 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 14:37:06.645 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 63.7927 ms
+2023-05-23 14:37:06.649 +08:00 [INF] Request finished in 70.8125ms 200 text/plain; charset=utf-8
+2023-05-23 14:37:16.669 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Healthcheck  
+2023-05-23 14:37:16.672 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 14:37:16.676 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 14:37:16.679 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 14:37:16.681 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.3263ms
+2023-05-23 14:37:16.684 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 14:37:16.686 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 13.8914 ms
+2023-05-23 14:37:16.689 +08:00 [INF] Request finished in 20.2541ms 200 text/plain; charset=utf-8
+2023-05-23 14:41:17.495 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 14:41:17.537 +08:00 [INF] Now listening on: http://localhost:5000
+2023-05-23 14:41:17.540 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 14:41:17.541 +08:00 [INF] Hosting environment: Development
+2023-05-23 14:41:17.542 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 14:41:20.563 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 14:41:20.819 +08:00 [INF] HTTP GET /index.html responded 200 in 147.159 ms
+2023-05-23 14:41:20.830 +08:00 [INF] Request finished in 329.747ms 200 text/html;charset=utf-8
+2023-05-23 14:41:20.894 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 14:41:20.917 +08:00 [INF] Request finished in 23.1913ms 200 application/javascript; charset=utf-8
+2023-05-23 14:41:21.716 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 14:41:21.842 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 122.019 ms
+2023-05-23 14:41:21.846 +08:00 [INF] Request finished in 130.9537ms 200 application/json;charset=utf-8
+2023-05-23 14:52:58.687 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 14:52:58.762 +08:00 [INF] Now listening on: http://localhost:5000
+2023-05-23 14:52:58.766 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 14:52:58.767 +08:00 [INF] Hosting environment: Development
+2023-05-23 14:52:58.769 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 14:53:00.083 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 14:53:00.372 +08:00 [INF] HTTP GET /index.html responded 200 in 234.8878 ms
+2023-05-23 14:53:00.384 +08:00 [INF] Request finished in 305.7234ms 200 text/html;charset=utf-8
+2023-05-23 14:53:00.440 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 14:53:00.444 +08:00 [INF] Request finished in 3.6226ms 200 application/javascript; charset=utf-8
+2023-05-23 14:53:00.460 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink  
+2023-05-23 14:53:00.506 +08:00 [INF] Request finished in 46.5052ms 200 text/javascript; charset=UTF-8
+2023-05-23 14:53:00.864 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 14:53:00.954 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 85.2646 ms
+2023-05-23 14:53:00.957 +08:00 [INF] Request finished in 93.2682ms 200 application/json;charset=utf-8
+2023-05-23 15:09:42.384 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 15:09:42.431 +08:00 [INF] Now listening on: http://localhost:5000
+2023-05-23 15:09:42.433 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 15:09:42.434 +08:00 [INF] Hosting environment: Development
+2023-05-23 15:09:42.435 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 15:09:44.499 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 15:09:44.701 +08:00 [INF] HTTP GET /index.html responded 200 in 148.908 ms
+2023-05-23 15:09:44.713 +08:00 [INF] Request finished in 221.2288ms 200 text/html;charset=utf-8
+2023-05-23 15:09:44.795 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 15:09:44.804 +08:00 [INF] Request finished in 9.6053ms 200 application/javascript; charset=utf-8
+2023-05-23 15:09:45.578 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 15:09:45.751 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 169.2824 ms
+2023-05-23 15:09:45.755 +08:00 [INF] Request finished in 178.144ms 200 application/json;charset=utf-8
+2023-05-23 15:11:33.010 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 15:11:33.043 +08:00 [INF] Now listening on: http://localhost:5000
+2023-05-23 15:11:33.045 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 15:11:33.046 +08:00 [INF] Hosting environment: Development
+2023-05-23 15:11:33.047 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 15:11:34.159 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 15:11:34.317 +08:00 [INF] HTTP GET /index.html responded 200 in 119.6206 ms
+2023-05-23 15:11:34.339 +08:00 [INF] Request finished in 185.0254ms 200 text/html;charset=utf-8
+2023-05-23 15:11:34.368 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 15:11:34.378 +08:00 [INF] Request finished in 9.5339ms 200 application/javascript; charset=utf-8
+2023-05-23 15:11:34.951 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 15:11:35.022 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 68.7411 ms
+2023-05-23 15:11:35.025 +08:00 [INF] Request finished in 75.5476ms 200 application/json;charset=utf-8
+2023-05-23 15:11:40.262 +08:00 [INF] Application is shutting down...
+2023-05-23 15:21:32.427 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 15:21:32.470 +08:00 [INF] Now listening on: http://localhost:5000
+2023-05-23 15:21:32.472 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 15:21:32.473 +08:00 [INF] Hosting environment: Development
+2023-05-23 15:21:32.474 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 15:21:36.041 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 15:21:36.627 +08:00 [INF] HTTP GET /index.html responded 200 in 383.7294 ms
+2023-05-23 15:21:36.642 +08:00 [INF] Request finished in 608.5253ms 200 text/html;charset=utf-8
+2023-05-23 15:21:36.789 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 15:21:36.789 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink  
+2023-05-23 15:21:36.797 +08:00 [INF] Request finished in 8.8557ms 200 application/javascript; charset=utf-8
+2023-05-23 15:21:36.955 +08:00 [INF] Request finished in 166.2198ms 200 text/javascript; charset=UTF-8
+2023-05-23 15:21:37.287 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 15:21:37.437 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 146.8231 ms
+2023-05-23 15:21:37.441 +08:00 [INF] Request finished in 154.2422ms 200 application/json;charset=utf-8
+2023-05-23 15:23:35.611 +08:00 [INF] Now listening on: http://172.23.176.1:5001
+2023-05-23 15:23:35.644 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 15:23:35.646 +08:00 [INF] Hosting environment: Development
+2023-05-23 15:23:35.647 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 15:24:48.424 +08:00 [INF] Application is shutting down...
+2023-05-23 15:25:22.150 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 15:25:22.181 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 15:25:22.185 +08:00 [INF] Hosting environment: Development
+2023-05-23 15:25:22.186 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 15:28:26.942 +08:00 [INF] Application is shutting down...
+2023-05-23 15:28:46.965 +08:00 [FTL] Unable to start Kestrel.
+System.Net.Sockets.SocketException (10049): 在其上下文中，该请求的地址无效。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2023-05-23 16:02:29.419 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 16:02:29.469 +08:00 [INF] Now listening on: http://localhost:5000
+2023-05-23 16:02:29.471 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 16:02:29.472 +08:00 [INF] Hosting environment: Development
+2023-05-23 16:02:29.473 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 16:02:31.156 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 16:02:31.613 +08:00 [INF] HTTP GET /index.html responded 200 in 417.2222 ms
+2023-05-23 16:02:31.620 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 16:02:31.627 +08:00 [INF] Request finished in 6.3014ms 200 application/javascript; charset=utf-8
+2023-05-23 16:02:31.629 +08:00 [INF] Request finished in 476.7567ms 200 text/html;charset=utf-8
+2023-05-23 16:02:31.724 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink  
+2023-05-23 16:02:31.842 +08:00 [INF] Request finished in 118.016ms 200 text/javascript; charset=UTF-8
+2023-05-23 16:02:32.086 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 16:02:32.200 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 110.7367 ms
+2023-05-23 16:02:32.203 +08:00 [INF] Request finished in 118.4257ms 200 application/json;charset=utf-8
+2023-05-23 16:03:48.114 +08:00 [FTL] Unable to start Kestrel.
+System.Net.Sockets.SocketException (10049): 在其上下文中，该请求的地址无效。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2023-05-23 16:39:52.489 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 16:39:52.537 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 16:39:52.538 +08:00 [INF] Hosting environment: Development
+2023-05-23 16:39:52.540 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 16:40:04.722 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/  
+2023-05-23 16:40:04.732 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 16:40:04.763 +08:00 [INF] HTTP GET / responded 301 in 27.7505 ms
+2023-05-23 16:40:04.772 +08:00 [INF] Request finished in 52.4485ms 301 
+2023-05-23 16:40:04.794 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/index.html  
+2023-05-23 16:40:04.817 +08:00 [INF] HTTP GET /index.html responded 200 in 20.261 ms
+2023-05-23 16:40:04.821 +08:00 [INF] Request finished in 26.4299ms 200 text/html;charset=utf-8
+2023-05-23 16:40:04.868 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/swagger-ui.css  
+2023-05-23 16:40:04.870 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/swagger-ui-bundle.js  
+2023-05-23 16:40:04.872 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/swagger-ui-standalone-preset.js  
+2023-05-23 16:40:04.893 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-05-23 16:40:04.893 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-05-23 16:40:04.898 +08:00 [INF] HTTP GET /swagger-ui.css responded 200 in 26.8687 ms
+2023-05-23 16:40:04.898 +08:00 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 200 in 22.8657 ms
+2023-05-23 16:40:04.899 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-05-23 16:40:04.901 +08:00 [INF] Request finished in 32.3692ms 200 text/css
+2023-05-23 16:40:04.902 +08:00 [INF] Request finished in 30.2921ms 200 application/javascript
+2023-05-23 16:40:04.904 +08:00 [INF] HTTP GET /swagger-ui-bundle.js responded 200 in 32.1573 ms
+2023-05-23 16:40:04.912 +08:00 [INF] Request finished in 42.6562ms 200 application/javascript
+2023-05-23 16:40:05.205 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/swagger/V1/swagger.json  
+2023-05-23 16:40:05.237 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/favicon-32x32.png  
+2023-05-23 16:40:05.245 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-05-23 16:40:05.248 +08:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 4.33 ms
+2023-05-23 16:40:05.253 +08:00 [INF] Request finished in 16.8634ms 200 image/png
+2023-05-23 16:40:05.284 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 75.1956 ms
+2023-05-23 16:40:05.290 +08:00 [INF] Request finished in 84.7101ms 200 application/json;charset=utf-8
+2023-05-23 16:40:18.102 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 16:40:18.110 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:40:18.140 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 16:40:22.486 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 4334.7493ms
+2023-05-23 16:40:22.491 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:40:22.493 +08:00 [ERR] HTTP GET /api/Books responded 500 in 4386.8459 ms
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter log, Nullable`1 serverType, EndPointCollection endpoints) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 709
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 673
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 651
+   at WebApi.Redis.RedisContext.GetConnection() in C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\RedisContext.cs:line 16
+   at WebApi.Redis.RedisContext.GetList(String key) in C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\RedisContext.cs:line 88
+   at WebApi.Demo.Controllers.BooksController.GetAllBook() in C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo\Controllers\BooksController.cs:line 53
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-05-23 16:40:22.581 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter log, Nullable`1 serverType, EndPointCollection endpoints) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 709
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 673
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 651
+   at WebApi.Redis.RedisContext.GetConnection() in C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\RedisContext.cs:line 16
+   at WebApi.Redis.RedisContext.GetList(String key) in C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\RedisContext.cs:line 88
+   at WebApi.Demo.Controllers.BooksController.GetAllBook() in C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo\Controllers\BooksController.cs:line 53
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-05-23 16:40:22.631 +08:00 [INF] Request finished in 4528.7005ms 500 text/html; charset=utf-8
+2023-05-23 16:40:22.791 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/favicon.ico  
+2023-05-23 16:40:22.794 +08:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2657 ms
+2023-05-23 16:40:22.797 +08:00 [INF] Request finished in 5.4178ms 404 
+2023-05-23 16:40:39.869 +08:00 [INF] Application is shutting down...
+2023-05-23 16:41:11.145 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 16:41:11.178 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 16:41:11.179 +08:00 [INF] Hosting environment: Development
+2023-05-23 16:41:11.180 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 16:41:23.766 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/index.html  
+2023-05-23 16:41:23.774 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 16:41:23.824 +08:00 [INF] HTTP GET /index.html responded 200 in 46.0449 ms
+2023-05-23 16:41:23.832 +08:00 [INF] Request finished in 69.1775ms 200 text/html;charset=utf-8
+2023-05-23 16:41:24.218 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/swagger/V1/swagger.json  
+2023-05-23 16:41:24.286 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 65.6638 ms
+2023-05-23 16:41:24.290 +08:00 [INF] Request finished in 72.4635ms 200 application/json;charset=utf-8
+2023-05-23 16:41:36.218 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 16:41:36.226 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:41:36.241 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 16:41:36.791 +08:00 [INF] Entity Framework Core 3.1.0 initialized 'BMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-05-23 16:41:37.197 +08:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[Author], [t].[ISBN], [t].[Publisher], [t0].[Id], [t0].[Amount], [t0].[Bookid]
+FROM [TB_Book] AS [t]
+LEFT JOIN [TB_Inventory] AS [t0] ON [t].[Id] = [t0].[Bookid]
+2023-05-23 16:41:37.289 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 16:41:37.303 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 1053.87ms
+2023-05-23 16:41:37.306 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:41:37.309 +08:00 [INF] HTTP GET /api/Books responded 200 in 1086.5982 ms
+2023-05-23 16:41:37.319 +08:00 [INF] Request finished in 1101.0871ms 200 application/json; charset=utf-8
+2023-05-23 16:41:49.821 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 16:41:49.825 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:41:49.828 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 16:41:49.847 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 16:41:49.850 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 18.0118ms
+2023-05-23 16:41:49.852 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:41:49.854 +08:00 [INF] HTTP GET /api/Books responded 200 in 29.0505 ms
+2023-05-23 16:41:49.856 +08:00 [INF] Request finished in 35.2537ms 200 application/json; charset=utf-8
+2023-05-23 16:43:19.642 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 16:43:19.647 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:43:19.652 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 16:43:19.687 +08:00 [INF] Entity Framework Core 3.1.0 initialized 'BMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-05-23 16:43:19.699 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[Author], [t].[ISBN], [t].[Publisher], [t0].[Id], [t0].[Amount], [t0].[Bookid]
+FROM [TB_Book] AS [t]
+LEFT JOIN [TB_Inventory] AS [t0] ON [t].[Id] = [t0].[Bookid]
+2023-05-23 16:43:19.727 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 16:43:19.729 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 73.8233ms
+2023-05-23 16:43:19.731 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:43:19.733 +08:00 [INF] HTTP GET /api/Books responded 200 in 86.489 ms
+2023-05-23 16:43:19.735 +08:00 [INF] Request finished in 93.5848ms 200 application/json; charset=utf-8
+2023-05-23 16:43:31.777 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books/1  
+2023-05-23 16:43:31.780 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetSingleBook (WebApi.Demo)'
+2023-05-23 16:43:31.792 +08:00 [INF] Route matched with {action = "GetSingleBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApi.Entity.Book] GetSingleBook(Int32) on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 16:43:31.815 +08:00 [INF] Executing ObjectResult, writing value of type 'WebApi.Entity.Book'.
+2023-05-23 16:43:31.818 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetSingleBook (WebApi.Demo) in 21.8563ms
+2023-05-23 16:43:31.820 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetSingleBook (WebApi.Demo)'
+2023-05-23 16:43:31.823 +08:00 [INF] HTTP GET /api/Books/1 responded 200 in 43.3031 ms
+2023-05-23 16:43:31.825 +08:00 [INF] Request finished in 48.6134ms 200 application/json; charset=utf-8
+2023-05-23 16:46:32.476 +08:00 [INF] Now listening on: https://192.168.31.151:5001
+2023-05-23 16:46:32.508 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 16:46:32.511 +08:00 [INF] Hosting environment: Development
+2023-05-23 16:46:32.512 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 16:46:42.663 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/  
+2023-05-23 16:46:42.693 +08:00 [INF] HTTP GET / responded 301 in 22.3156 ms
+2023-05-23 16:46:42.699 +08:00 [INF] Request finished in 37.2913ms 301 
+2023-05-23 16:46:42.725 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/index.html  
+2023-05-23 16:46:42.746 +08:00 [INF] HTTP GET /index.html responded 200 in 18.7411 ms
+2023-05-23 16:46:42.751 +08:00 [INF] Request finished in 25.8583ms 200 text/html;charset=utf-8
+2023-05-23 16:46:42.791 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/swagger-ui.css  
+2023-05-23 16:46:42.793 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/swagger-ui-bundle.js  
+2023-05-23 16:46:42.797 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/swagger-ui-standalone-preset.js  
+2023-05-23 16:46:42.804 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-05-23 16:46:42.804 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-05-23 16:46:42.804 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-05-23 16:46:42.807 +08:00 [INF] HTTP GET /swagger-ui.css responded 200 in 12.6645 ms
+2023-05-23 16:46:42.811 +08:00 [INF] HTTP GET /swagger-ui-bundle.js responded 200 in 15.3595 ms
+2023-05-23 16:46:42.813 +08:00 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 200 in 14.1039 ms
+2023-05-23 16:46:42.816 +08:00 [INF] Request finished in 24.3195ms 200 text/css
+2023-05-23 16:46:42.818 +08:00 [INF] Request finished in 25.5212ms 200 application/javascript
+2023-05-23 16:46:42.823 +08:00 [INF] Request finished in 25.9919ms 200 application/javascript
+2023-05-23 16:46:43.137 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/swagger/V1/swagger.json  
+2023-05-23 16:46:43.178 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/favicon-32x32.png  
+2023-05-23 16:46:43.181 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-05-23 16:46:43.185 +08:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 4.9086 ms
+2023-05-23 16:46:43.190 +08:00 [INF] Request finished in 12.3864ms 200 image/png
+2023-05-23 16:46:43.215 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 74.5785 ms
+2023-05-23 16:46:43.218 +08:00 [INF] Request finished in 81.6936ms 200 application/json;charset=utf-8
+2023-05-23 16:48:36.436 +08:00 [INF] Application is shutting down...
+2023-05-23 16:49:49.311 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 16:49:49.344 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 16:49:49.346 +08:00 [INF] Hosting environment: Development
+2023-05-23 16:49:49.347 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 16:50:53.938 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 16:50:53.948 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 16:50:53.983 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:50:54.006 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 16:50:54.612 +08:00 [INF] Entity Framework Core 3.1.0 initialized 'BMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-05-23 16:50:54.988 +08:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[Author], [t].[ISBN], [t].[Publisher], [t0].[Id], [t0].[Amount], [t0].[Bookid]
+FROM [TB_Book] AS [t]
+LEFT JOIN [TB_Inventory] AS [t0] ON [t].[Id] = [t0].[Bookid]
+2023-05-23 16:50:55.078 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 16:50:55.100 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 1088.0681ms
+2023-05-23 16:50:55.103 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:50:55.105 +08:00 [INF] HTTP GET /api/Books responded 200 in 1153.2912 ms
+2023-05-23 16:50:55.113 +08:00 [INF] Request finished in 1176.1396ms 200 application/json; charset=utf-8
+2023-05-23 16:51:58.821 +08:00 [INF] Application is shutting down...
+2023-05-23 16:52:33.526 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 16:52:33.557 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 16:52:33.559 +08:00 [INF] Hosting environment: Development
+2023-05-23 16:52:33.560 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 16:52:59.097 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 16:52:59.105 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 16:52:59.133 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:52:59.148 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 16:52:59.637 +08:00 [INF] Entity Framework Core 3.1.0 initialized 'BMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-05-23 16:52:59.930 +08:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[Author], [t].[ISBN], [t].[Publisher], [t0].[Id], [t0].[Amount], [t0].[Bookid]
+FROM [TB_Book] AS [t]
+LEFT JOIN [TB_Inventory] AS [t0] ON [t].[Id] = [t0].[Bookid]
+2023-05-23 16:53:00.018 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 16:53:00.032 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 878.189ms
+2023-05-23 16:53:00.035 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 16:53:00.038 +08:00 [INF] HTTP GET /api/Books responded 200 in 928.9224 ms
+2023-05-23 16:53:00.043 +08:00 [INF] Request finished in 947.4931ms 200 application/json; charset=utf-8
+2023-05-23 16:54:05.696 +08:00 [INF] Application is shutting down...
+2023-05-23 16:54:48.943 +08:00 [INF] Now listening on: https://192.168.31.151:5001
+2023-05-23 16:54:48.976 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 16:54:48.978 +08:00 [INF] Hosting environment: Development
+2023-05-23 16:54:48.979 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 16:55:03.067 +08:00 [INF] Application is shutting down...
+2023-05-23 16:56:23.348 +08:00 [INF] Now listening on: https://192.168.31.151:5001
+2023-05-23 16:56:23.379 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 16:56:23.381 +08:00 [INF] Hosting environment: Development
+2023-05-23 16:56:23.382 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 16:57:07.851 +08:00 [INF] Application is shutting down...
+2023-05-23 17:01:39.521 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:01:39.553 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:01:39.555 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:01:39.556 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:01:59.843 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 17:01:59.852 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 17:01:59.888 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:01:59.910 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 17:02:00.562 +08:00 [INF] Entity Framework Core 3.1.0 initialized 'BMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-05-23 17:02:00.943 +08:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[Author], [t].[ISBN], [t].[Publisher], [t0].[Id], [t0].[Amount], [t0].[Bookid]
+FROM [TB_Book] AS [t]
+LEFT JOIN [TB_Inventory] AS [t0] ON [t].[Id] = [t0].[Bookid]
+2023-05-23 17:02:01.036 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 17:02:01.059 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 1143.2759ms
+2023-05-23 17:02:01.063 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:02:01.065 +08:00 [INF] HTTP GET /api/Books responded 200 in 1209.5797 ms
+2023-05-23 17:02:01.070 +08:00 [INF] Request finished in 1229.7582ms 200 application/json; charset=utf-8
+2023-05-23 17:02:54.506 +08:00 [INF] Application is shutting down...
+2023-05-23 17:05:07.470 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 17:05:07.515 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:05:07.517 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:05:07.518 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:05:07.519 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:05:10.866 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 17:05:11.112 +08:00 [INF] HTTP GET /index.html responded 200 in 210.632 ms
+2023-05-23 17:05:11.120 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:05:11.129 +08:00 [INF] Request finished in 8.28ms 200 application/javascript; charset=utf-8
+2023-05-23 17:05:11.131 +08:00 [INF] Request finished in 266.7769ms 200 text/html;charset=utf-8
+2023-05-23 17:05:11.237 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink  
+2023-05-23 17:05:11.778 +08:00 [INF] Request finished in 540.8195ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:05:12.088 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:05:12.536 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 444.4437 ms
+2023-05-23 17:05:12.541 +08:00 [INF] Request finished in 452.6774ms 200 application/json;charset=utf-8
+2023-05-23 17:05:58.061 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 17:05:58.121 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:05:58.123 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:05:58.125 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:05:58.128 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:06:01.346 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 17:06:03.003 +08:00 [INF] HTTP GET /index.html responded 200 in 559.7355 ms
+2023-05-23 17:06:03.014 +08:00 [INF] Request finished in 1670.0097ms 200 text/html;charset=utf-8
+2023-05-23 17:06:03.046 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:06:03.050 +08:00 [INF] Request finished in 3.9836ms 200 application/javascript; charset=utf-8
+2023-05-23 17:06:03.065 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink  
+2023-05-23 17:06:03.083 +08:00 [INF] Request finished in 17.4677ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:06:03.896 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:06:03.989 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 89.7511 ms
+2023-05-23 17:06:03.998 +08:00 [INF] Request finished in 102.2378ms 200 application/json;charset=utf-8
+2023-05-23 17:06:07.072 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/index.html  
+2023-05-23 17:06:07.090 +08:00 [INF] Request finished in 17.8437ms 307 
+2023-05-23 17:06:15.080 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/index.html  
+2023-05-23 17:06:15.085 +08:00 [INF] Request finished in 4.9288ms 307 
+2023-05-23 17:06:24.125 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/index.html  
+2023-05-23 17:06:24.129 +08:00 [INF] Request finished in 4.8234ms 307 
+2023-05-23 17:06:38.614 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/index.html  
+2023-05-23 17:06:38.620 +08:00 [INF] Request finished in 5.5689ms 307 
+2023-05-23 17:07:26.796 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 17:07:26.836 +08:00 [INF] Now listening on: https://192.168.31.151:5001
+2023-05-23 17:07:26.838 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:07:26.839 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:07:26.841 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:07:28.386 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 17:07:28.961 +08:00 [INF] HTTP GET /index.html responded 200 in 157.1441 ms
+2023-05-23 17:07:28.970 +08:00 [INF] Request finished in 592.5969ms 200 text/html;charset=utf-8
+2023-05-23 17:07:29.016 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:07:29.021 +08:00 [INF] Request finished in 4.5449ms 200 application/javascript; charset=utf-8
+2023-05-23 17:07:29.284 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink  
+2023-05-23 17:07:29.301 +08:00 [INF] Request finished in 16.6062ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:07:29.562 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:07:29.678 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 112.4405 ms
+2023-05-23 17:07:29.684 +08:00 [INF] Request finished in 121.7186ms 200 application/json;charset=utf-8
+2023-05-23 17:07:33.298 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/index.html  
+2023-05-23 17:07:33.330 +08:00 [INF] HTTP GET /index.html responded 200 in 23.1663 ms
+2023-05-23 17:07:33.334 +08:00 [INF] Request finished in 36.1938ms 200 text/html;charset=utf-8
+2023-05-23 17:07:33.388 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/swagger-ui.css  
+2023-05-23 17:07:33.389 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/swagger-ui-bundle.js  
+2023-05-23 17:07:33.393 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/swagger-ui-standalone-preset.js  
+2023-05-23 17:07:33.394 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:07:33.403 +08:00 [INF] Request finished in 9.08ms 200 application/javascript; charset=utf-8
+2023-05-23 17:07:33.413 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-05-23 17:07:33.420 +08:00 [INF] HTTP GET /swagger-ui.css responded 200 in 29.5363 ms
+2023-05-23 17:07:33.439 +08:00 [INF] Request finished in 50.6151ms 200 text/css
+2023-05-23 17:07:33.445 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-05-23 17:07:33.456 +08:00 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 200 in 58.3767 ms
+2023-05-23 17:07:33.462 +08:00 [INF] Request finished in 68.8208ms 200 application/javascript
+2023-05-23 17:07:33.462 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-05-23 17:07:33.468 +08:00 [INF] HTTP GET /swagger-ui-bundle.js responded 200 in 75.7844 ms
+2023-05-23 17:07:33.471 +08:00 [INF] Request finished in 81.7571ms 200 application/javascript
+2023-05-23 17:07:33.496 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/_vs/browserLink  
+2023-05-23 17:07:33.507 +08:00 [INF] Request finished in 10.9793ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:07:33.760 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/swagger/V1/swagger.json  
+2023-05-23 17:07:33.774 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 9.3521 ms
+2023-05-23 17:07:33.779 +08:00 [INF] Request finished in 19.3168ms 200 application/json;charset=utf-8
+2023-05-23 17:07:33.817 +08:00 [INF] Request starting HTTP/2 GET https://192.168.31.151:5001/favicon-32x32.png  
+2023-05-23 17:07:33.821 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-05-23 17:07:33.823 +08:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 2.9974 ms
+2023-05-23 17:07:33.827 +08:00 [INF] Request finished in 9.3385ms 200 image/png
+2023-05-23 17:10:21.588 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 17:10:21.635 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:10:21.637 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:10:21.638 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:10:21.639 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:10:25.044 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 17:10:25.784 +08:00 [INF] HTTP GET /index.html responded 200 in 529.4026 ms
+2023-05-23 17:10:25.798 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:10:25.806 +08:00 [INF] Request finished in 768.8772ms 200 text/html;charset=utf-8
+2023-05-23 17:10:25.826 +08:00 [INF] Request finished in 27.3912ms 200 application/javascript; charset=utf-8
+2023-05-23 17:10:26.302 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink  
+2023-05-23 17:10:26.390 +08:00 [INF] Request finished in 88.498ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:10:26.559 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:10:26.664 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 101.882 ms
+2023-05-23 17:10:26.667 +08:00 [INF] Request finished in 109.2145ms 200 application/json;charset=utf-8
+2023-05-23 17:14:17.764 +08:00 [INF] Now listening on: https://localhost:5001
+2023-05-23 17:14:17.806 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:14:17.808 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:14:17.809 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:14:17.810 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:14:19.037 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2023-05-23 17:14:19.580 +08:00 [INF] HTTP GET /index.html responded 200 in 173.8162 ms
+2023-05-23 17:14:19.595 +08:00 [INF] Request finished in 563.7498ms 200 text/html;charset=utf-8
+2023-05-23 17:14:19.636 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:14:19.642 +08:00 [INF] Request finished in 5.9022ms 200 application/javascript; charset=utf-8
+2023-05-23 17:14:19.735 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink  
+2023-05-23 17:14:19.753 +08:00 [INF] Request finished in 18.6653ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:14:20.078 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:14:20.163 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 80.0536 ms
+2023-05-23 17:14:20.168 +08:00 [INF] Request finished in 90.3179ms 200 application/json;charset=utf-8
+2023-05-23 17:15:08.318 +08:00 [INF] Now listening on: http://localhost:5001
+2023-05-23 17:15:08.359 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:15:08.362 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:15:08.363 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:15:08.364 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:15:09.382 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/  
+2023-05-23 17:15:09.538 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 17:15:09.645 +08:00 [INF] HTTP GET / responded 301 in 75.8042 ms
+2023-05-23 17:15:09.687 +08:00 [INF] Request finished in 312.5317ms 301 
+2023-05-23 17:15:09.729 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/index.html  
+2023-05-23 17:15:09.890 +08:00 [INF] HTTP GET /index.html responded 200 in 157.4211 ms
+2023-05-23 17:15:09.898 +08:00 [INF] Request finished in 168.2533ms 200 text/html;charset=utf-8
+2023-05-23 17:15:09.919 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger-ui.css  
+2023-05-23 17:15:09.925 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger-ui-standalone-preset.js  
+2023-05-23 17:15:09.924 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger-ui-bundle.js  
+2023-05-23 17:15:09.926 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:15:09.932 +08:00 [INF] Request finished in 5.9419ms 200 application/javascript; charset=utf-8
+2023-05-23 17:15:09.961 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-05-23 17:15:09.961 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-05-23 17:15:09.964 +08:00 [INF] HTTP GET /swagger-ui.css responded 200 in 37.1606 ms
+2023-05-23 17:15:09.966 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-05-23 17:15:09.966 +08:00 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 200 in 38.6426 ms
+2023-05-23 17:15:09.969 +08:00 [INF] Request finished in 49.7374ms 200 text/css
+2023-05-23 17:15:09.972 +08:00 [INF] HTTP GET /swagger-ui-bundle.js responded 200 in 43.4617 ms
+2023-05-23 17:15:09.976 +08:00 [INF] Request finished in 50.6105ms 200 application/javascript
+2023-05-23 17:15:09.983 +08:00 [INF] Request finished in 58.7947ms 200 application/javascript
+2023-05-23 17:15:10.047 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink  
+2023-05-23 17:15:10.065 +08:00 [INF] Request finished in 18.0719ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:15:10.476 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:15:10.479 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/favicon-32x32.png  
+2023-05-23 17:15:10.483 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-05-23 17:15:10.486 +08:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 3.525 ms
+2023-05-23 17:15:10.489 +08:00 [INF] Request finished in 9.8866ms 200 image/png
+2023-05-23 17:15:10.566 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 86.4082 ms
+2023-05-23 17:15:10.569 +08:00 [INF] Request finished in 93.0475ms 200 application/json;charset=utf-8
+2023-05-23 17:15:12.612 +08:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5001/api/Healthcheck  
+2023-05-23 17:15:12.624 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:15:12.649 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:15:12.659 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:15:12.671 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 11.5874ms
+2023-05-23 17:15:12.675 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:15:12.678 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 60.8885 ms
+2023-05-23 17:15:12.681 +08:00 [INF] Request finished in 69.7458ms 200 text/plain; charset=utf-8
+2023-05-23 17:15:12.926 +08:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5001/favicon.ico  
+2023-05-23 17:15:12.930 +08:00 [INF] HTTP GET /favicon.ico responded 404 in 0.7111 ms
+2023-05-23 17:15:12.934 +08:00 [INF] Request finished in 7.7633ms 404 
+2023-05-23 17:15:33.555 +08:00 [INF] Now listening on: http://localhost:5001
+2023-05-23 17:15:33.612 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:15:33.614 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:15:33.615 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:15:33.617 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:15:35.160 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/index.html  
+2023-05-23 17:15:35.267 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 17:15:35.599 +08:00 [INF] HTTP GET /index.html responded 200 in 320.1305 ms
+2023-05-23 17:15:35.614 +08:00 [INF] Request finished in 460.6464ms 200 text/html;charset=utf-8
+2023-05-23 17:15:35.716 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:15:35.726 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink  
+2023-05-23 17:15:35.726 +08:00 [INF] Request finished in 10.6005ms 200 application/javascript; charset=utf-8
+2023-05-23 17:15:35.743 +08:00 [INF] Request finished in 17.2488ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:15:36.175 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:15:36.262 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 81.5819 ms
+2023-05-23 17:15:36.267 +08:00 [INF] Request finished in 92.8108ms 200 application/json;charset=utf-8
+2023-05-23 17:16:30.857 +08:00 [INF] Application is shutting down...
+2023-05-23 17:16:38.398 +08:00 [INF] Now listening on: http://localhost:5001
+2023-05-23 17:16:38.456 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:16:38.457 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:16:38.458 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:16:38.459 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:16:39.464 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/index.html  
+2023-05-23 17:16:39.657 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 17:16:39.921 +08:00 [INF] HTTP GET /index.html responded 200 in 241.5042 ms
+2023-05-23 17:16:39.927 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:16:39.933 +08:00 [INF] Request finished in 4.9823ms 200 application/javascript; charset=utf-8
+2023-05-23 17:16:39.935 +08:00 [INF] Request finished in 477.4ms 200 text/html;charset=utf-8
+2023-05-23 17:16:40.038 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink  
+2023-05-23 17:16:40.052 +08:00 [INF] Request finished in 14.0527ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:16:40.439 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:16:40.546 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 104.1519 ms
+2023-05-23 17:16:40.549 +08:00 [INF] Request finished in 110.04ms 200 application/json;charset=utf-8
+2023-05-23 17:17:19.688 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/api/Books  
+2023-05-23 17:17:19.706 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:17:19.733 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 17:17:20.527 +08:00 [INF] Entity Framework Core 3.1.0 initialized 'BMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-05-23 17:17:21.017 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[Author], [t].[ISBN], [t].[Publisher], [t0].[Id], [t0].[Amount], [t0].[Bookid]
+FROM [TB_Book] AS [t]
+LEFT JOIN [TB_Inventory] AS [t0] ON [t].[Id] = [t0].[Bookid]
+2023-05-23 17:17:21.126 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 17:17:21.139 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 1397.9273ms
+2023-05-23 17:17:21.143 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:17:21.146 +08:00 [INF] HTTP GET /api/Books responded 200 in 1450.0962 ms
+2023-05-23 17:17:21.151 +08:00 [INF] Request finished in 1463.6466ms 200 application/json; charset=utf-8
+2023-05-23 17:17:21.369 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/favicon.ico  
+2023-05-23 17:17:21.375 +08:00 [INF] HTTP GET /favicon.ico responded 404 in 2.4747 ms
+2023-05-23 17:17:21.378 +08:00 [INF] Request finished in 9.8016ms 404 
+2023-05-23 17:17:55.058 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 17:17:55.062 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:17:55.064 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 17:17:55.093 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 17:17:55.095 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 28.8954ms
+2023-05-23 17:17:55.097 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:17:55.098 +08:00 [INF] HTTP GET /api/Books responded 200 in 37.5068 ms
+2023-05-23 17:17:55.100 +08:00 [INF] Request finished in 42.0266ms 200 application/json; charset=utf-8
+2023-05-23 17:17:59.118 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 17:17:59.124 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:17:59.128 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 17:17:59.162 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 17:17:59.166 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 34.1658ms
+2023-05-23 17:17:59.170 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:17:59.173 +08:00 [INF] HTTP GET /api/Books responded 200 in 48.9489 ms
+2023-05-23 17:17:59.177 +08:00 [INF] Request finished in 59.5006ms 200 application/json; charset=utf-8
+2023-05-23 17:17:59.436 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/favicon.ico  
+2023-05-23 17:17:59.439 +08:00 [INF] HTTP GET /favicon.ico responded 404 in 0.3466 ms
+2023-05-23 17:17:59.444 +08:00 [INF] Request finished in 7.4318ms 404 
+2023-05-23 17:18:48.923 +08:00 [INF] Now listening on: http://localhost:5001
+2023-05-23 17:18:48.964 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:18:48.967 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:18:48.968 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:18:48.969 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:18:50.248 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/index.html  
+2023-05-23 17:18:50.369 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 17:18:50.664 +08:00 [INF] HTTP GET /index.html responded 200 in 254.4519 ms
+2023-05-23 17:18:50.676 +08:00 [INF] Request finished in 437.9831ms 200 text/html;charset=utf-8
+2023-05-23 17:18:50.701 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:18:50.705 +08:00 [INF] Request finished in 3.7982ms 200 application/javascript; charset=utf-8
+2023-05-23 17:18:50.825 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink  
+2023-05-23 17:18:50.840 +08:00 [INF] Request finished in 14.6002ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:18:51.143 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:18:51.235 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 87.4978 ms
+2023-05-23 17:18:51.238 +08:00 [INF] Request finished in 94.3941ms 200 application/json;charset=utf-8
+2023-05-23 17:18:58.923 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Books  
+2023-05-23 17:18:58.932 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:18:58.948 +08:00 [INF] Route matched with {action = "GetAllBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] GetAllBook() on controller WebApi.Demo.Controllers.BooksController (WebApi.Demo).
+2023-05-23 17:18:59.603 +08:00 [INF] Entity Framework Core 3.1.0 initialized 'BMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-05-23 17:18:59.973 +08:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[Author], [t].[ISBN], [t].[Publisher], [t0].[Id], [t0].[Amount], [t0].[Bookid]
+FROM [TB_Book] AS [t]
+LEFT JOIN [TB_Inventory] AS [t0] ON [t].[Id] = [t0].[Bookid]
+2023-05-23 17:19:00.078 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApi.Entity.Book, WebApi.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 17:19:00.090 +08:00 [INF] Executed action WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo) in 1132.4601ms
+2023-05-23 17:19:00.092 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.BooksController.GetAllBook (WebApi.Demo)'
+2023-05-23 17:19:00.094 +08:00 [INF] HTTP GET /api/Books responded 200 in 1167.8077 ms
+2023-05-23 17:19:00.100 +08:00 [INF] Request finished in 1177.1833ms 200 application/json; charset=utf-8
+2023-05-23 17:19:33.480 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:19:33.529 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:19:33.531 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:19:33.533 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:19:34.423 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/index.html  
+2023-05-23 17:19:34.563 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 17:19:34.832 +08:00 [INF] HTTP GET /index.html responded 200 in 218.8017 ms
+2023-05-23 17:19:34.842 +08:00 [INF] Request finished in 424.8064ms 200 text/html;charset=utf-8
+2023-05-23 17:19:34.874 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:19:34.877 +08:00 [INF] Request finished in 3.0447ms 200 application/javascript; charset=utf-8
+2023-05-23 17:19:34.968 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/_vs/browserLink  
+2023-05-23 17:19:34.980 +08:00 [INF] Request finished in 12.3204ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:19:35.280 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/swagger/V1/swagger.json  
+2023-05-23 17:19:35.381 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 97.8778 ms
+2023-05-23 17:19:35.385 +08:00 [INF] Request finished in 105.7421ms 200 application/json;charset=utf-8
+2023-05-23 17:20:36.812 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:20:36.869 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:20:36.871 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:20:36.872 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:20:37.896 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/index.html  
+2023-05-23 17:20:38.031 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 17:20:38.322 +08:00 [INF] HTTP GET /index.html responded 200 in 261.8221 ms
+2023-05-23 17:20:38.334 +08:00 [INF] Request finished in 453.2721ms 200 text/html;charset=utf-8
+2023-05-23 17:20:38.430 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:20:38.442 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/_vs/browserLink  
+2023-05-23 17:20:38.443 +08:00 [INF] Request finished in 13.1297ms 200 application/javascript; charset=utf-8
+2023-05-23 17:20:38.478 +08:00 [INF] Request finished in 35.7913ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:20:38.918 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/swagger/V1/swagger.json  
+2023-05-23 17:20:39.010 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 86.4834 ms
+2023-05-23 17:20:39.014 +08:00 [INF] Request finished in 97.8232ms 200 application/json;charset=utf-8
+2023-05-23 17:20:39.951 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 17:20:39.961 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:20:39.981 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:20:39.994 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:20:40.002 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 7.5503ms
+2023-05-23 17:20:40.006 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:20:40.008 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 54.2146 ms
+2023-05-23 17:20:40.011 +08:00 [INF] Request finished in 60.4306ms 200 text/plain; charset=utf-8
+2023-05-23 17:20:50.018 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 17:20:50.023 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:20:50.026 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:20:50.031 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:20:50.033 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.3947ms
+2023-05-23 17:20:50.035 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:20:50.037 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 15.4149 ms
+2023-05-23 17:20:50.040 +08:00 [INF] Request finished in 22.2925ms 200 text/plain; charset=utf-8
+2023-05-23 17:21:00.046 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 17:21:00.051 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:00.055 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:21:00.065 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:21:00.068 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 3.2355ms
+2023-05-23 17:21:00.073 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:00.075 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 24.4801 ms
+2023-05-23 17:21:00.077 +08:00 [INF] Request finished in 30.9442ms 200 text/plain; charset=utf-8
+2023-05-23 17:21:10.087 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 17:21:10.089 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:10.091 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:21:10.094 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:21:10.096 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 1.8746ms
+2023-05-23 17:21:10.098 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:10.100 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 10.9022 ms
+2023-05-23 17:21:10.102 +08:00 [INF] Request finished in 15.1306ms 200 text/plain; charset=utf-8
+2023-05-23 17:21:20.108 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 17:21:20.111 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:20.113 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:21:20.117 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:21:20.119 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.5118ms
+2023-05-23 17:21:20.121 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:20.123 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 13.1735 ms
+2023-05-23 17:21:20.126 +08:00 [INF] Request finished in 18.0839ms 200 text/plain; charset=utf-8
+2023-05-23 17:21:30.130 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 17:21:30.133 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:30.135 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:21:30.137 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:21:30.139 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.323ms
+2023-05-23 17:21:30.142 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:30.143 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 10.7417 ms
+2023-05-23 17:21:30.145 +08:00 [INF] Request finished in 15.2058ms 200 text/plain; charset=utf-8
+2023-05-23 17:21:40.152 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 17:21:40.155 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:40.157 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:21:40.160 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:21:40.162 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.0041ms
+2023-05-23 17:21:40.164 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:21:40.166 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 11.0167 ms
+2023-05-23 17:21:40.169 +08:00 [INF] Request finished in 17.4693ms 200 text/plain; charset=utf-8
+2023-05-23 17:23:23.510 +08:00 [INF] Now listening on: http://localhost:5001
+2023-05-23 17:23:23.553 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 17:23:23.556 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 17:23:23.558 +08:00 [INF] Hosting environment: Development
+2023-05-23 17:23:23.559 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 17:23:23.731 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 17:23:23.749 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 17:23:23.786 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:23:23.803 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:23:23.813 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:23:23.832 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 14.5587ms
+2023-05-23 17:23:23.838 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:23:23.841 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 87.8934 ms
+2023-05-23 17:23:23.845 +08:00 [INF] Request finished in 116.0032ms 200 text/plain; charset=utf-8
+2023-05-23 17:23:25.648 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/index.html  
+2023-05-23 17:23:26.128 +08:00 [INF] HTTP GET /index.html responded 200 in 443.1619 ms
+2023-05-23 17:23:26.139 +08:00 [INF] Request finished in 490.5624ms 200 text/html;charset=utf-8
+2023-05-23 17:23:26.314 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink  
+2023-05-23 17:23:26.336 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 17:23:26.343 +08:00 [INF] Request finished in 7.2793ms 200 application/javascript; charset=utf-8
+2023-05-23 17:23:26.454 +08:00 [INF] Request finished in 139.9198ms 200 text/javascript; charset=UTF-8
+2023-05-23 17:23:27.027 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 17:23:27.140 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 109.0725 ms
+2023-05-23 17:23:27.145 +08:00 [INF] Request finished in 118.4502ms 200 application/json;charset=utf-8
+2023-05-23 17:23:33.851 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 17:23:33.857 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:23:33.859 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 17:23:33.862 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 17:23:33.864 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.1617ms
+2023-05-23 17:23:33.867 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 17:23:33.874 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 18.3648 ms
+2023-05-23 17:23:33.879 +08:00 [INF] Request finished in 28.1011ms 200 text/plain; charset=utf-8
+2023-05-23 19:37:00.144 +08:00 [INF] Now listening on: http://localhost:5001
+2023-05-23 19:37:00.193 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-23 19:37:00.195 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 19:37:00.196 +08:00 [INF] Hosting environment: Development
+2023-05-23 19:37:00.197 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-23 19:37:00.286 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 19:37:00.485 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-23 19:37:00.572 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 19:37:00.611 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 19:37:00.624 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 19:37:00.662 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 36.9536ms
+2023-05-23 19:37:00.671 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 19:37:00.674 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 184.9699 ms
+2023-05-23 19:37:00.679 +08:00 [INF] Request finished in 395.6549ms 200 text/plain; charset=utf-8
+2023-05-23 19:37:02.875 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/index.html  
+2023-05-23 19:37:03.415 +08:00 [INF] HTTP GET /index.html responded 200 in 416.7768 ms
+2023-05-23 19:37:03.442 +08:00 [INF] Request finished in 567.9832ms 200 text/html;charset=utf-8
+2023-05-23 19:37:03.495 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js  
+2023-05-23 19:37:03.518 +08:00 [INF] Request finished in 23.0521ms 200 application/javascript; charset=utf-8
+2023-05-23 19:37:03.660 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink  
+2023-05-23 19:37:03.746 +08:00 [INF] Request finished in 85.4634ms 200 text/javascript; charset=UTF-8
+2023-05-23 19:37:04.199 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/V1/swagger.json  
+2023-05-23 19:37:04.352 +08:00 [INF] HTTP GET /swagger/V1/swagger.json responded 200 in 148.3387 ms
+2023-05-23 19:37:04.357 +08:00 [INF] Request finished in 158.4607ms 200 application/json;charset=utf-8
+2023-05-23 19:37:10.685 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-23 19:37:10.689 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 19:37:10.692 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-23 19:37:10.695 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-23 19:37:10.697 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.2883ms
+2023-05-23 19:37:10.700 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-23 19:37:10.702 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 13.9013 ms
+2023-05-23 19:37:10.704 +08:00 [INF] Request finished in 20.2601ms 200 text/plain; charset=utf-8

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>图书信息提交</title>
+  <script src="js/jquery-3.6.1.js"></script>
+</head>
+<body>
+  <form id="book-form">
+    <label for="id">图书ID:</label>
+    <input type="text" name="id" id="id"><br>
+
+    <label for="name">图书名:</label>
+    <input type="text" name="name" id="name"><br>
+  
+    <label for="author">作者:</label>
+    <input type="text"  name="author" id="author"><br>
+  
+    <label for="isbn">ISBN:</label>
+    <input type="text" name="isbn" id="isbn"><br>
+
+    <label for="publisher">出版社:</label>
+    <input type="text"  name="publisher" id="publisher"><br>
+
+    <label for="quantity">采购数量:</label>
+    <input type="text"  name="quantity" id="quantity"><br>
+  
+    <button type="submit">采购图书</button>
+  </form>
+
+  <script>
+    var urlParams = new URLSearchParams(window.location.search); 
+    var bookId = urlParams.get('id');
+    $.ajax({
+         url: 'https://localhost:5001/api/Books/' + bookId,
+         type: 'GET',
+         dataType: 'json',
+         success: function(book) {
+          // 将图书信息填充到表单中
+            $('#id').val(book.id);
+            $('#name').val(book.name);
+            $('#author').val(book.author);
+            $('#isbn').val(book.isbn);
+            $('#publisher').val(book.publisher);
+           },
+         error: function(xhr, status, error) {
+            alert('查询失败：' + status);
+          }
+     });
+
+
+    $(document).ready(function() {
+      $('#book-form').submit(function(e) {
+        e.preventDefault(); // 阻止表单默认提交行为
+
+        var formData = {
+            id: parseInt($('input[name="id"]').val()),
+            name: $('input[name="name"]').val(),
+            author: $('input[name="author"]').val(),
+            isbn:$('input[name="isbn"]').val(),
+            publisher:$('input[name="publisher"]').val(),
+            quantity:parseInt($('input[name="quantity"]').val())
+          };
+        console.log(formData);
+        console.log(JSON.stringify(formData));
+
+        $.ajax({
+          url: 'https://localhost:5001/api/Inventory',
+          type: 'POST',
+          data: JSON.stringify(formData),
+          contentType: 'application/json', // 设置请求头部为 JSON
+          success: function(response) {
+            // 成功处理服务器响应
+            console.log(response);
+            alert("采购成功")
+            window.location.href="index.html";
+          },
+          error: function(xhr, status, error) {
+            // 处理错误
+            console.log(xhr.responseText);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

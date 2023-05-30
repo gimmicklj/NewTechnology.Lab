@@ -1,0 +1,103 @@
+2023-05-26 21:22:34.050 +08:00 [INF] Now listening on: http://localhost:5001
+2023-05-26 21:22:34.085 +08:00 [INF] Now listening on: http://192.168.31.151:5001
+2023-05-26 21:22:34.087 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-26 21:22:34.089 +08:00 [INF] Hosting environment: Development
+2023-05-26 21:22:34.090 +08:00 [INF] Content root path: C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Demo
+2023-05-26 21:22:35.900 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:22:35.907 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-05-26 21:22:35.935 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:35.948 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:22:35.953 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:22:35.962 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 6.156ms
+2023-05-26 21:22:35.966 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:35.968 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 57.5636 ms
+2023-05-26 21:22:35.971 +08:00 [INF] Request finished in 73.4076ms 200 text/plain; charset=utf-8
+2023-05-26 21:22:39.187 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:22:39.191 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:39.193 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:22:39.198 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:22:39.200 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.4524ms
+2023-05-26 21:22:39.203 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:39.205 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 15.1707 ms
+2023-05-26 21:22:39.208 +08:00 [INF] Request finished in 20.7763ms 200 text/plain; charset=utf-8
+2023-05-26 21:22:40.046 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:22:40.052 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:40.056 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:22:40.059 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:22:40.061 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.2216ms
+2023-05-26 21:22:40.064 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:40.066 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 15.4667 ms
+2023-05-26 21:22:40.069 +08:00 [INF] Request finished in 22.9067ms 200 text/plain; charset=utf-8
+2023-05-26 21:22:45.977 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:22:45.980 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:45.982 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:22:45.985 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:22:45.988 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.4455ms
+2023-05-26 21:22:45.990 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:45.992 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 11.5592 ms
+2023-05-26 21:22:45.994 +08:00 [INF] Request finished in 16.8776ms 200 text/plain; charset=utf-8
+2023-05-26 21:22:49.213 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:22:49.217 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:49.219 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:22:49.223 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:22:49.224 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 1.8045ms
+2023-05-26 21:22:49.226 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:49.228 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 11.6302 ms
+2023-05-26 21:22:49.230 +08:00 [INF] Request finished in 17.2498ms 200 text/plain; charset=utf-8
+2023-05-26 21:22:50.074 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:22:50.077 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:50.079 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:22:50.082 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:22:50.084 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.0653ms
+2023-05-26 21:22:50.086 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:50.088 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 10.8018 ms
+2023-05-26 21:22:50.091 +08:00 [INF] Request finished in 16.8775ms 200 text/plain; charset=utf-8
+2023-05-26 21:22:55.999 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:22:56.002 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:56.004 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:22:56.006 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:22:56.008 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.0281ms
+2023-05-26 21:22:56.010 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:56.012 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 10.598 ms
+2023-05-26 21:22:56.014 +08:00 [INF] Request finished in 15.4236ms 200 text/plain; charset=utf-8
+2023-05-26 21:22:59.238 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:22:59.242 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:59.246 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:22:59.250 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:22:59.253 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 3.5179ms
+2023-05-26 21:22:59.256 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:22:59.259 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 17.2159 ms
+2023-05-26 21:22:59.261 +08:00 [INF] Request finished in 23.2144ms 200 text/plain; charset=utf-8
+2023-05-26 21:23:00.098 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:23:00.100 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:23:00.102 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:23:00.105 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:23:00.106 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 1.7961ms
+2023-05-26 21:23:00.108 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:23:00.110 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 9.603 ms
+2023-05-26 21:23:00.113 +08:00 [INF] Request finished in 15.469ms 200 text/plain; charset=utf-8
+2023-05-26 21:23:06.020 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:23:06.023 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:23:06.025 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:23:06.028 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:23:06.029 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 1.8207ms
+2023-05-26 21:23:06.032 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:23:06.033 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 10.3156 ms
+2023-05-26 21:23:06.035 +08:00 [INF] Request finished in 14.9669ms 200 text/plain; charset=utf-8
+2023-05-26 21:23:09.268 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:23:09.270 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:23:09.272 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:23:09.275 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:23:09.277 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 2.1366ms
+2023-05-26 21:23:09.280 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:23:09.281 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 11.295 ms
+2023-05-26 21:23:09.283 +08:00 [INF] Request finished in 15.6178ms 200 text/plain; charset=utf-8
+2023-05-26 21:23:10.119 +08:00 [INF] Request starting HTTP/1.1 GET http://192.168.31.151:5001/api/Healthcheck  
+2023-05-26 21:23:10.122 +08:00 [INF] Executing endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:23:10.123 +08:00 [INF] Route matched with {action = "Get", controller = "HealthCheck"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Linq.IQueryable`1[WebApi.Entity.Book]] Get() on controller WebApi.Demo.Controllers.HealthCheckController (WebApi.Demo).
+2023-05-26 21:23:10.126 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-26 21:23:10.128 +08:00 [INF] Executed action WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo) in 1.8749ms
+2023-05-26 21:23:10.130 +08:00 [INF] Executed endpoint 'WebApi.Demo.Controllers.HealthCheckController.Get (WebApi.Demo)'
+2023-05-26 21:23:10.132 +08:00 [INF] HTTP GET /api/Healthcheck responded 200 in 10.1729 ms
+2023-05-26 21:23:10.134 +08:00 [INF] Request finished in 15.0411ms 200 text/plain; charset=utf-8
+2023-05-26 21:23:14.635 +08:00 [INF] Application is shutting down...

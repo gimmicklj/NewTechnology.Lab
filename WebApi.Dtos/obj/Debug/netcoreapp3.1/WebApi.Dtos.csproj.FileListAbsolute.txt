@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\bin\Debug\netcoreapp3.1\WebApi.Dtos.deps.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\bin\Debug\netcoreapp3.1\WebApi.Dtos.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\bin\Debug\netcoreapp3.1\WebApi.Dtos.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\obj\Debug\netcoreapp3.1\WebApi.Dtos.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\obj\Debug\netcoreapp3.1\WebApi.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\obj\Debug\netcoreapp3.1\WebApi.Dtos.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\obj\Debug\netcoreapp3.1\WebApi.Dtos.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\obj\Debug\netcoreapp3.1\WebApi.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\obj\Debug\netcoreapp3.1\WebApi.Dtos.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Dtos\obj\Debug\netcoreapp3.1\WebApi.Dtos.pdb

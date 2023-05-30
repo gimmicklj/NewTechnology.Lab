@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.1.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+    </style>
+    </style>
+    <script>
+        $(document).ready(function() {
+        // 发送ajax请求
+        $.ajax({
+            url: 'https://localhost:5001/api/Books',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+            // 清空表格内容
+            $('#bookTable tbody').empty();
+            // 遍历查询结果，添加到表格中
+            $.each(data, function(index, book) {
+                var row = '<tr>' +
+                        '<td>' + book.id + '</td>' +
+                        '<td>' + book.name + '</td>' +
+                        '<td>' + book.author + '</td>' +
+                        '<td>' + book.publisher + '</td>' +
+                        '<td>' + book.isbn + '</td>' +
+                        '<td>' + book.inventory.amount + '</td>' +
+                        '<td>' + '<a href="purchase.html?id=' + book.id + '">采购</a>' + '</td>' +
+                        '</tr>';
+                $('#bookTable tbody').append(row);
+            });
+            },
+            error: function(xhr, status, error) {
+            alert('查询失败：' + status + error);
+            }
+        });
+        });
+
+    </script>
+</head>
+<body>
+    <table class="tbl" id="bookTable">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>书名</th>
+      <th>作者</th>
+      <th>出版社</th>
+      <th>ISBN</th>
+      <th>库存</th>
+      <th>采购</th>    
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</body>
+</html>

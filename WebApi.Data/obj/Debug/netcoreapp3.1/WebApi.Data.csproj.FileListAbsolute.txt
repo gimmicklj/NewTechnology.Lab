@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.deps.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.runtimeconfig.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Data.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.csproj.CopyComplete
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\obj\Debug\netcoreapp3.1\WebApi.Data.genruntimeconfig.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Entity.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Data\bin\Debug\netcoreapp3.1\WebApi.Entity.pdb

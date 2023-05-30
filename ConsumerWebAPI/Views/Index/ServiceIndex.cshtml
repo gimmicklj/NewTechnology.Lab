@@ -1,0 +1,74 @@
+﻿@model List<ConsulService>
+
+    <style>
+        table.tftable,
+        table.table-count {
+            font-size: 12px;
+            color: #333333;
+            width: 100%;
+            border-width: 1px;
+            border-collapse: collapse;
+        }
+
+            table.table-count th,
+            table.table-count td {
+                font-weight: 400;
+                font-style: normal;
+                font-size: 12px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #e4e4e4;
+                text-align: center;
+            }
+
+            table.tftable th,
+            table.tftable td {
+                font-weight: 400;
+                font-style: normal;
+                font-size: 12px;
+                border-width: 1px;
+                padding: 8px;
+                border-style: solid;
+                border-color: #e4e4e4;
+                text-align: left;
+                text-align: center;
+            }
+
+        .tftable {
+            margin-left: 1%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        table.tftable tr:hover {
+            background: #C3ECFF;
+        }
+
+        .tftable > thead > tr:hover {
+            background: white;
+        }
+    </style>
+
+        <table class="tftable" style="width: 98%;">
+            <tr>
+                <td>服务ID</td>
+                <td>服务IP</td>
+                <td>服务端口</td>
+                <td>服务名称</td>
+                <td>调用服务</td>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Address</td>
+                    <td>@item.Port</td>
+                    <td>@item.Name</td>
+                    <td>@Html.ActionLink("获取数据","GetWebAPI",new { Url = item.Url })</td>
+                </tr>
+            }
+
+        </table>
+
+
+

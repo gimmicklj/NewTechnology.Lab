@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\bin\Debug\netcoreapp3.1\WebApi.Entity.deps.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\bin\Debug\netcoreapp3.1\WebApi.Entity.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\bin\Debug\netcoreapp3.1\WebApi.Entity.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\obj\Debug\netcoreapp3.1\WebApi.Entity.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\obj\Debug\netcoreapp3.1\WebApi.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\obj\Debug\netcoreapp3.1\WebApi.Entity.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\obj\Debug\netcoreapp3.1\WebApi.Entity.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\obj\Debug\netcoreapp3.1\WebApi.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\obj\Debug\netcoreapp3.1\WebApi.Entity.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Models\obj\Debug\netcoreapp3.1\WebApi.Entity.pdb

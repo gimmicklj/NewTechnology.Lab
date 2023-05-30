@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\obj\Debug\netcoreapp3.1\WebApi.Services.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\obj\Debug\netcoreapp3.1\WebApi.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\obj\Debug\netcoreapp3.1\WebApi.Services.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\obj\Debug\netcoreapp3.1\WebApi.Services.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\obj\Debug\netcoreapp3.1\WebApi.Services.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\bin\Debug\netcoreapp3.1\WebApi.Services.deps.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\bin\Debug\netcoreapp3.1\WebApi.Services.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\bin\Debug\netcoreapp3.1\WebApi.Services.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\bin\Debug\netcoreapp3.1\WebApi.Data.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\bin\Debug\netcoreapp3.1\WebApi.Dtos.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\bin\Debug\netcoreapp3.1\WebApi.Data.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\bin\Debug\netcoreapp3.1\WebApi.Dtos.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\obj\Debug\netcoreapp3.1\WebApi.Services.csproj.CopyComplete
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\obj\Debug\netcoreapp3.1\WebApi.Services.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\obj\Debug\netcoreapp3.1\WebApi.Services.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\bin\Debug\netcoreapp3.1\WebApi.Entity.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Services\bin\Debug\netcoreapp3.1\WebApi.Entity.pdb

@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\bin\Debug\netcoreapp3.1\WebApi.Redis.deps.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\bin\Debug\netcoreapp3.1\WebApi.Redis.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\bin\Debug\netcoreapp3.1\WebApi.Redis.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\obj\Debug\netcoreapp3.1\WebApi.Redis.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\obj\Debug\netcoreapp3.1\WebApi.Redis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\obj\Debug\netcoreapp3.1\WebApi.Redis.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\obj\Debug\netcoreapp3.1\WebApi.Redis.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\obj\Debug\netcoreapp3.1\WebApi.Redis.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\obj\Debug\netcoreapp3.1\WebApi.Redis.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Redis\obj\Debug\netcoreapp3.1\WebApi.Redis.pdb

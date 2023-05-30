@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>c7192900-0437-4240-bb52-d32980cae009</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi.ConsulExtend\WebApi.ConsulExtend.csproj" />
+    <ProjectReference Include="..\WebApi.Data\WebApi.Data.csproj" />
+    <ProjectReference Include="..\WebApi.Dtos\WebApi.Dtos.csproj" />
+    <ProjectReference Include="..\WebApi.Logger\WebApi.Logger.csproj" />
+    <ProjectReference Include="..\WebApi.Models\WebApi.Entity.csproj" />
+    <ProjectReference Include="..\WebApi.RabbitMq\WebApi.RabbitMq.csproj" />
+    <ProjectReference Include="..\WebApi.Redis\WebApi.Redis.csproj" />
+    <ProjectReference Include="..\WebApi.Services\WebApi.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>

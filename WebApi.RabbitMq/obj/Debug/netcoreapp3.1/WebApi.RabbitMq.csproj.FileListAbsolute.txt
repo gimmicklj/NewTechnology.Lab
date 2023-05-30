@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\bin\Debug\netcoreapp3.1\WebApi.RabbitMq.deps.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\bin\Debug\netcoreapp3.1\WebApi.RabbitMq.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\bin\Debug\netcoreapp3.1\WebApi.RabbitMq.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\obj\Debug\netcoreapp3.1\WebApi.RabbitMq.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\obj\Debug\netcoreapp3.1\WebApi.RabbitMq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\obj\Debug\netcoreapp3.1\WebApi.RabbitMq.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\obj\Debug\netcoreapp3.1\WebApi.RabbitMq.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\obj\Debug\netcoreapp3.1\WebApi.RabbitMq.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\obj\Debug\netcoreapp3.1\WebApi.RabbitMq.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.RabbitMq\obj\Debug\netcoreapp3.1\WebApi.RabbitMq.pdb

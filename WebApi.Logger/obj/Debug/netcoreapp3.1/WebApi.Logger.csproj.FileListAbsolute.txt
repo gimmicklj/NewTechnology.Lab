@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\bin\Debug\netcoreapp3.1\WebApi.Logger.deps.json
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\bin\Debug\netcoreapp3.1\WebApi.Logger.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\bin\Debug\netcoreapp3.1\WebApi.Logger.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\obj\Debug\netcoreapp3.1\WebApi.Logger.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\obj\Debug\netcoreapp3.1\WebApi.Logger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\obj\Debug\netcoreapp3.1\WebApi.Logger.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\obj\Debug\netcoreapp3.1\WebApi.Logger.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\obj\Debug\netcoreapp3.1\WebApi.Logger.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\obj\Debug\netcoreapp3.1\WebApi.Logger.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.Logger\obj\Debug\netcoreapp3.1\WebApi.Logger.pdb
