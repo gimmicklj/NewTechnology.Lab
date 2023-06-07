@@ -36,7 +36,7 @@ namespace AuthServer.Controllers
             }
 
             var token = GenerateToken(requestDTO.LoginName);
-            return Ok(new { access_token = token, expires_in = (int)m_Settings.Value.TokenExpiration.TotalSeconds });
+            return Ok(new { access_token = token, expires_in = (int)TimeSpan.FromMinutes(15).TotalSeconds });
         }
 
         private bool ValidateUser(User dbUser)
