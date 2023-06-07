@@ -20,11 +20,14 @@ using System.Collections;
 using WebApi.Redis;
 using WebApi.Services.Inventory;
 using WebApi.RabbitMq;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApi.Demo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("CorsPolicy")] //允许跨域
     public class BooksController : ControllerBase
     {
         private readonly IBookService m_bookService;
@@ -47,6 +50,7 @@ namespace WebApi.Demo.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet()]
+        [Authorize]
         public ActionResult<IQueryable<Book>> GetAllBook()
         {
             if (m_context.GetList("Books").Count() == 0)

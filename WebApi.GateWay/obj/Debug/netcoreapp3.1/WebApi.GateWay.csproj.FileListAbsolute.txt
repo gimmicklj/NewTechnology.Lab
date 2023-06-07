@@ -38,3 +38,10 @@ C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\Consul
 C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\Ocelot.Provider.Consul.dll
 C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
 C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Desktop\WebApi.Demo\WebApi.GateWay\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

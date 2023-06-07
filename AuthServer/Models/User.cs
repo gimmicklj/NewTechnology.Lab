@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AuthServer.Models
+namespace Models
 {
     /// <summary>
     /// 登录账户

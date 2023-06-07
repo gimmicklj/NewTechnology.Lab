@@ -6,16 +6,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApi.Entity;
 using WebApi.Data.DataContext;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TestWebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("CorsPolicy")] //允许跨域
     public class TodoItemsController : ControllerBase
     {
         private static TodoContext m_DbContext;
 
-        private static bool m_Init = false;
+        private static readonly bool m_Init = false;
         private static void Init()
         {
             if (!m_Init)
@@ -38,6 +41,7 @@ namespace TestWebAPI.Controllers
         // GET: api/TodoItems
         //[HttpGet("items")]
         [HttpGet()]
+        [Authorize]
         public ActionResult<IQueryable<TodoItem>> GetTodoItem()
         {
             var todoItems = m_DbContext.TodoItems;

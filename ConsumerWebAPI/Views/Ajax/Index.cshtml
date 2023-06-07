@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="~/js/jquery-3.6.1.js"></script>
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var url = urlParams.get('url');
+        var token = localStorage.getItem('token');
+        alert(token);
+
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'json',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
+            beforeSend: function (request) {
+                //Bearer后面一定要加一个空格
+                request.setRequestHeader("Authorization", "Bearer " + token)
+            },
+            success: function (data) {
+                console.log(data);
+                $("#result").html(JSON.stringify(data));
+                alert('查询成功！');
+            },
+            error: function (xhr, status, error) {
+                alert('查询失败：' + status + error);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>

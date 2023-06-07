@@ -56,3 +56,10 @@ C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\obj\Debug\netcoreapp3.1\TestWebAPI
 C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\WebApi.ConsulExtend.dll
 C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\WebApi.ConsulExtend.pdb
+C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Desktop\WebApi.Demo\TestWebAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

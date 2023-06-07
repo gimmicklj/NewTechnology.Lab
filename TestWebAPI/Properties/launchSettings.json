@@ -14,7 +14,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:5002;http://192.168.31.151:5002"
+      "applicationUrl": "http://localhost:5002;http:// 192.168.31.151:5002"
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",

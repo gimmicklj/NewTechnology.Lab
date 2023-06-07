@@ -1,5 +1,4 @@
-﻿
-using ConsumerWebAPI.Models;
+﻿using ConsumerWebAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System;
@@ -31,18 +30,52 @@ namespace ConsumerWebAPI.Controllers
             var list = new List<ConsulService>();
             foreach (var item in services.Response)
             {
-                ConsulService service = new ConsulService
+                if (string.Compare(item.Value.Service, "api/todoitems", true) == 0)
                 {
-                    Id = item.Value.ID,
-                    Address = item.Value.Address,
-                    Port = item.Value.Port,
-                    Name = item.Value.Service,
-                    Url = $"http://{item.Value.Address}:{item.Value.Port}/{item.Value.Service}"
-                };
-                list.Add(service);
+                    ConsulService service = new ConsulService
+                    {
+                        Id = item.Value.ID,
+                        Address = item.Value.Address,
+                        Port = item.Value.Port,
+                        Name = item.Value.Service,
+                        Url = $"http://localhost:5000/ocelot-1/todoitems"
+                    };
+                    list.Add(service);
+                }
+                if (string.Compare(item.Value.Service, "api/Books", true) == 0)
+                {
+                    ConsulService service = new ConsulService
+                    {
+                        Id = item.Value.ID,
+                        Address = item.Value.Address,
+                        Port = item.Value.Port,
+                        Name = item.Value.Service,
+                        Url = $"http://localhost:5000/ocelot-2/Books"
+                    };
+                    list.Add(service);
+                }
             }
-
             return View(list);
-        }      
+        }
+
+         public IActionResult GetWebAPI(string Url)
+        {
+            var result =ClientPolicy.Instance.WrapPolicy.Execute(delegate ()
+            {
+                return CallWebAPI(Url);
+            });
+
+            ViewBag.result = result;
+            return View();
+        }
+
+        public static string CallWebAPI(string Url)
+        {
+            var url = Url;
+            var client = new System.Net.WebClient();
+            var result = client.DownloadString(url);
+            Console.WriteLine("执行WebAPI请求：" + url);
+            return result;
+        }
     }
 }

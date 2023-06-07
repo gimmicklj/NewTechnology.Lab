@@ -25,13 +25,17 @@ namespace ConsumerWebAPI.PollyExtend
             }
         }
 
-
         /// <summary>
         /// 自定义Polly策略
         /// </summary>
         private ClientPolicy()
         {
 
+            var retryPolicy = Policy<string>.Handle<Exception>()
+                                  .Retry(3, (ex, retryCount) =>
+                                  { 
+                                      Console.WriteLine($"重新次数：{retryCount}: " + ex.Exception.Message);
+                                  });       
 
             var fallbackPolicy = Policy<string>.Handle<Exception>()
                                          .Fallback(() =>
@@ -40,7 +44,7 @@ namespace ConsumerWebAPI.PollyExtend
                                          });
 
             var circuitBreakerPolicy = Policy<string>.Handle<Exception>()
-                                             .CircuitBreaker(3,
+                                             .CircuitBreaker(1,
                                                               TimeSpan.FromSeconds(30),
                                                               onBreak: (Exception, TimeSpan) =>
                                                               {
@@ -55,7 +59,7 @@ namespace ConsumerWebAPI.PollyExtend
                                                                   Console.WriteLine("-------断路器：半开启状态");
                                                               });
 
-            m_WrapPolicy = Policy.Wrap(fallbackPolicy, circuitBreakerPolicy);   // 策略的优先级是右到左
+            m_WrapPolicy = Policy.Wrap(fallbackPolicy, circuitBreakerPolicy, retryPolicy);   // 策略的优先级是右到左
         }
        
     }

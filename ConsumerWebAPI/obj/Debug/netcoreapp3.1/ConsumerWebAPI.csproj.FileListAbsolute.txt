@@ -46,3 +46,4 @@ C:\Users\Admin\Desktop\WebApi.Demo\ConsumerWebAPI\bin\Debug\netcoreapp3.1\WebApi
 C:\Users\Admin\Desktop\WebApi.Demo\ConsumerWebAPI\bin\Debug\netcoreapp3.1\Polly.dll
 C:\Users\Admin\Desktop\WebApi.Demo\ConsumerWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Index\GetWebAPI.cshtml.g.cs
 C:\Users\Admin\Desktop\WebApi.Demo\ConsumerWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Index\ServiceIndex.cshtml.g.cs
+C:\Users\Admin\Desktop\WebApi.Demo\ConsumerWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Ajax\Index.cshtml.g.cs

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录界面</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: green;
+            }
+    </style>
+</head>
+<body>
+    <h1>登录</h1>
+    <form id="user-login">
+        <label for="username">用户名</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">密码</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="登录">
+    </form>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#user-login').submit(function (event) {
+                event.preventDefault();
+                var formData = {
+                    loginName: $('input[name="username"]').val(),
+                    password: $('input[name="password"]').val(),
+                };
+
+                $.ajax({
+                    url: 'http://localhost:5000/auth',
+                    type: 'POST',
+                    data: JSON.stringify(formData),
+                    contentType: 'application/json', // 设置请求头部为 JSON
+                    success: function (response) {
+                        // 登录成功
+                        var accessToken = response.access_token;
+                        var expiresIn = response.expires_in;
+                        alert("登录成功");
+                        window.location.href = "http://localhost:5005/Index/ServiceIndex";
+                    },
+                    error: function (xhr, status, error) {
+                        // 处理错误
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

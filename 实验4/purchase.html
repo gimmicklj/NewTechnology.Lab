@@ -31,7 +31,7 @@
     var urlParams = new URLSearchParams(window.location.search); 
     var bookId = urlParams.get('id');
     $.ajax({
-         url: 'https://localhost:5001/api/Books/' + bookId,
+         url: 'http://localhost:5001/api/Books/' + bookId,
          type: 'GET',
          dataType: 'json',
          success: function(book) {
